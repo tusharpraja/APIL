@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- BOOTSTRAP STYLE SHEET -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!-- FONTAWESOME STYLE SHEET -->
+<link rel="stylesheet" type="text/css" href="css/fontawesome/css/font-awesome.min.css" />
+
+<!-- OWL CAROUSEL STYLE SHEET -->
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+<!-- BOOTSTRAP SLECT BOX STYLE SHEET  -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+<!-- MAGNIFIC POPUP STYLE SHEET -->
+<link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css">
+<!-- LOADER STYLE SHEET -->
+<link rel="stylesheet" type="text/css" href="css/loader.min.css">
+<!-- MAIN STYLE SHEET -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- FLATICON STYLE SHEET -->
+<link rel="stylesheet" type="text/css" href="css/flaticon.min.css">
+
+<!-- IMAGE POPUP -->
+<link rel="stylesheet" type="text/css" href="css/lc_lightbox.css" />
+
+<!-- THEME COLOR CHANGE STYLE SHEET -->
+<link rel="stylesheet" class="skin" type="text/css" href="css/skin/skin-1.css">
+<!-- SIDE SWITCHER STYLE SHEET -->
+<link rel="stylesheet" type="text/css" href="css/switcher.css">
+
+<!-- REVOLUTION SLIDER CSS -->
+<link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/settings.css">
+<!-- REVOLUTION NAVIGATION STYLE -->
+<link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/navigation.css">
+
+<!-- GOOGLE FONTS -->
+<link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+        rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;display=swap" rel="stylesheet">
+
+  <title>Key Financial Performance</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background: #0a0a1a;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .financial-chart-section {
+      padding: 40px 0;
+    }
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+    canvas {
+      height: 100% !important;
+      width: 100% !important;
+    }
+    .chart-nav {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .chart-nav button {
+      background-color: #4cc9f0;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .chart-nav button.active {
+      background-color: #43aa8b;
+      color: white;
+    }
+    .chart-container {
+      width: 100%;
+      margin: auto;
+      background: #101028;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 12px 25px rgba(76, 201, 240, 0.2);
+      box-sizing: border-box;
+    }
+    .chart-title {
+      color: #ffffff;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+    .chart-subtitle {
+      color: #a0a0c0;
+      text-align: center;
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+    .chart-canvas-container {
+      height: 600px;
+      position: relative;
+      width: 100%;
+    }
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      gap: 15px;
+    }
+    .stat-box {
+      background: #1a1a3f;
+      color: #ffffff;
+      padding: 12px 15px;
+      border-radius: 8px;
+      text-align: center;
+      min-width: 160px;
+      border: 1px solid rgba(52, 152, 219, 0.2);
+    }
+    .stat-value {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #4cc9f0;
+    }
+    @media (max-width: 768px) {
+      .chart-canvas-container {
+        height: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- header -->
+  <div id="header"></div>
+
+
+
+
+  <div class="wt-bnr-inr overlay-wraper bg-center" 
+  style="background-image: url(images/growth.jpg); background-size: cover; background-position: center; position: relative;">
+
+<!-- Overlay (inline) -->
+<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+           background-color: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+
+<!-- Content -->
+<div class="container" style="position: relative; z-index: 2;">
+ <div class="wt-bnr-inr-entry text-left">
+   <div class="banner-title-outer">
+     <div class="banner-title-name">
+       <h2 class="text-white">Key Financial Performance</h2>
+     </div>
+   </div>
+
+   <!-- Breadcrumb -->
+   <div>
+     <ul class="wt-breadcrumb breadcrumb-style-2">
+       <li><a href="index.html">Home</a></li>
+       <li class="text-white">Key Financial Performance</li>
+     </ul>
+   </div>
+   <!-- Breadcrumb End -->
+ </div>
+</div>
+</div>
+
+
+
+  <section class="financial-chart-section">
+    <div class="container">
+      <div class="chart-nav">
+        <button id="turnoverBtn" class="active">TURNOVER</button>
+        <button id="pbtBtn">PBT</button>
+        <button id="networthBtn">NET WORTH</button>
+      </div>
+
+      <div class="chart-container" id="chartContainer">
+        <h2 class="chart-title" id="chartTitle">ANNUAL TURNOVER(CR)</h2>
+        <p class="chart-subtitle" id="chartSubtitle">2011-12 to 2023-24 Fiscal Years</p>
+        <div class="chart-canvas-container">
+          <canvas id="financialChart3D"></canvas>
+        </div>
+        <div class="stats" id="statsContainer"></div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- footer -->
+  <div id="footer"></div>
+
+
+  <script src="js/jquery-2.2.0.min.js"></script><!-- JQUERY.MIN JS --> 
+  <script src="js/popper.min.js"></script><!-- POPPER.MIN JS --> 
+  <script src="js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS --> 
+  <script src="js/bootstrap-select.min.js"></script><!-- Form js --> 
+  <script src="js/magnific-popup.min.js"></script><!-- MAGNIFIC-POPUP JS --> 
+  <script src="js/waypoints.min.js"></script><!-- WAYPOINTS JS --> 
+  <script src="js/counterup.min.js"></script><!-- COUNTERUP JS --> 
+  <script src="js/waypoints-sticky.min.js"></script><!-- STICKY HEADER --> 
+  <script src="js/isotope.pkgd.min.js"></script><!-- MASONRY  --> 
+  <script src="js/owl.carousel.min.js"></script><!-- OWL  SLIDER  --> 
+  <script src="js/stellar.min.js"></script><!-- PARALLAX BG IMAGE   --> 
+  <script src="js/map.script.js"></script> 
+  <script src="js/theia-sticky-sidebar.js"></script><!-- STICKY SIDEBAR  --> 
+  <script src="js/jquery.bootstrap-touchspin.js"></script><!-- FORM JS --> 
+  <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  --> 
+  <script src="js/lc_lightbox.lite.js"></script><!-- IMAGE POPUP --> 
+  <script src="js/switcher.js"></script><!-- SHORTCODE FUCTIONS  --> 
+  <script src="vendor/form_quote.js"></script> 
+  <script src="../www.google.com/recaptcha/api.js"></script>
+  <!-- heaser footer script -->
+  <script>
+    // Header Load karna
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+        });
+  
+    // Footer Load karna
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        });
+  </script>	
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const turnover = [
+      253410002.4, 303273510.3, 326765257.4, 376577719.4,
+      602702010.8, 1278341574, 1542847646, 2049092419,
+      981870552.1, 1015887961, 1031944270, 1450308856,
+      2486864371
+    ];
+
+    const pbt = [
+      18014696.28, 14267624.8, 15717392.55, 17083899.83,
+      25212826.92, 53237658.91, 48502297.45, 67007126.61,
+      18713756.76, 29283247.48, 30176796.86, 43834943.93,
+      197779856.1
+    ];
+
+    const networth = [
+      115546835.8, 132293644.2, 150926350, 164260395.2,
+      190313771.8, 234256285.8, 266600212.4, 314783236.3,
+      327450140.2, 363140953.1, 389992991.5, 419556825.2,
+      572453426.4
+    ];
+
+    const fiscalYears = [
+      '2011-12', '2012-13', '2013-14', '2014-15', '2015-16',
+      '2016-17', '2017-18', '2018-19', '2019-20', '2020-21',
+      '2021-22', '2022-23', '2023-24'
+    ];
+
+    const turnoverInCrores = turnover.map(v => v / 10000000);
+    const pbtInCrores = pbt.map(v => v / 10000000);
+    const networthInCrores = networth.map(v => v / 10000000);
+
+    const ctx = document.getElementById('financialChart3D').getContext('2d');
+
+    let currentChart = 'turnover';
+    let financialChart;
+
+    const chartColors = {
+      turnover: ['#4cc9f0', '#368bb0', '#62dbff'],
+      pbt: ['#43aa8b', '#2a7a65', '#65d3b0'],
+      networth: ['#4cc9f0', '#368bb0', '#62dbff']
+    };
+
+    const threeDBar = {
+      id: '3dBar',
+      beforeDraw: (chart) => {
+        const ctx = chart.ctx;
+        const meta = chart.getDatasetMeta(0);
+        const dataset = getData();
+
+        let maxHeight = 0;
+        meta.data.forEach(bar => {
+          const h = bar.base - bar.y;
+          if (h > maxHeight) maxHeight = h;
+        });
+
+        meta.data.forEach((bar, i) => {
+          const { x, y, base, width } = bar;
+          const h = base - y;
+          const d = 8;
+          const [main, side, top] = chartColors[currentChart];
+
+          ctx.fillStyle = main;
+          ctx.fillRect(x - width / 2, y, width, h);
+
+          ctx.fillStyle = side;
+          ctx.beginPath();
+          ctx.moveTo(x + width / 2, y);
+          ctx.lineTo(x + width / 2 + d, y - d);
+          ctx.lineTo(x + width / 2 + d, y - d + h);
+          ctx.lineTo(x + width / 2, y + h);
+          ctx.closePath();
+          ctx.fill();
+
+          ctx.fillStyle = top;
+          ctx.beginPath();
+          ctx.moveTo(x - width / 2, y);
+          ctx.lineTo(x + width / 2, y);
+          ctx.lineTo(x + width / 2 + d, y - d);
+          ctx.lineTo(x - width / 2 + d, y - d);
+          ctx.closePath();
+          ctx.fill();
+
+          ctx.fillStyle = '#fff';
+          ctx.font = 'bold 12px Arial';
+          ctx.textAlign = 'center';
+          ctx.fillText(`₹${dataset[i].toFixed(2)}`, x, y - (h === maxHeight ? 25 : 15));
+        });
+      }
+    };
+
+    Chart.register(threeDBar);
+
+    function getData() {
+      return currentChart === 'turnover' ? turnoverInCrores
+           : currentChart === 'pbt' ? pbtInCrores
+           : networthInCrores;
+    }
+
+    function createChart() {
+      if (financialChart) financialChart.destroy();
+
+      const data = getData();
+      const titles = {
+        turnover: ['ANNUAL TURNOVER (Values in CR)', '2011-12 to 2023-24 Fiscal Years'],
+        pbt: ['PROFIT BEFORE TAX (Values in CR)', '2011-12 to 2023-24 Fiscal Years'],
+        networth: ['NET WORTH (Values in CR)', '2011-12 to 2023-24 Fiscal Years']
+      };
+
+      updateStats(data);
+
+      financialChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: fiscalYears,
+          datasets: [{
+            label: titles[currentChart][0],
+            data: data,
+            backgroundColor: 'transparent',
+            borderWidth: 0
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          animation: {
+            duration: 1200,
+            easing: 'easeOutQuart'
+          },
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: function(context) {
+                  const index = context.dataIndex;
+                  const current = context.raw;
+                  const dataset = context.dataset.data;
+
+                  let label = `₹${current.toFixed(2)} CR`;
+                  if (index > 0) {
+                    const prev = dataset[index - 1];
+                    const growth = ((current - prev) / prev) * 100;
+                    label += ` | ${growth >= 0 ? '+' : ''}${growth.toFixed(1)}% growth`;
+                  } else {
+                    label += ` | Base Year`;
+                  }
+                  return label;
+                }
+              }
+            }
+          },
+          scales: {
+            x: {
+              ticks: { color: '#fff' },
+              grid: { display: false }
+            },
+            y: {
+              ticks: {
+                color: '#fff',
+                callback: value => `₹${value} CR`
+              },
+              grid: { color: 'rgba(255,255,255,0.1)' },
+              beginAtZero: true,
+              suggestedMax: Math.max(...data) * 1.2
+            }
+          },
+          layout: {
+            padding: { top: 50 }
+          }
+        },
+        plugins: [threeDBar]
+      });
+
+      document.getElementById('chartTitle').textContent = titles[currentChart][0];
+      document.getElementById('chartSubtitle').textContent = titles[currentChart][1];
+    }
+
+    function updateStats(data) {
+      const peak = Math.max(...data);
+      const peakIndex = data.indexOf(peak);
+      const growth = (((data[data.length - 1] - data[0]) / data[0]) * 100).toFixed(0);
+
+      let bestGrowth = 0;
+      let bestYear = fiscalYears[0];
+      for (let i = 1; i < data.length; i++) {
+        const g = ((data[i] - data[i - 1]) / data[i - 1]) * 100;
+        if (g > bestGrowth) {
+          bestGrowth = g;
+          bestYear = fiscalYears[i];
+        }
+      }
+
+      document.getElementById('statsContainer').innerHTML = `
+        <div class="stat-box"><div>Total Growth</div><div class="stat-value">${growth}%</div><div>Since 2011-12</div></div>
+      `;
+    }
+
+    function setActive(id) {
+      ['turnoverBtn', 'pbtBtn', 'networthBtn'].forEach(btn =>
+        document.getElementById(btn).classList.remove('active')
+      );
+      document.getElementById(id).classList.add('active');
+    }
+
+    function scrollToChart() {
+  const chartTop = document.querySelector('.chart-container').offsetTop;
+  window.scrollTo({ top: chartTop + 150, behavior: 'smooth' }); // Adjust +100 as needed
+}
+
+
+    document.getElementById('turnoverBtn').onclick = () => {
+      currentChart = 'turnover';
+      setActive('turnoverBtn');
+      createChart();
+      scrollToChart();
+    };
+    document.getElementById('pbtBtn').onclick = () => {
+      currentChart = 'pbt';
+      setActive('pbtBtn');
+      createChart();
+      scrollToChart();
+    };
+    document.getElementById('networthBtn').onclick = () => {
+      currentChart = 'networth';
+      setActive('networthBtn');
+      createChart();
+      scrollToChart();
+    };
+
+    createChart();
+  </script>
+</body>
+</html>
